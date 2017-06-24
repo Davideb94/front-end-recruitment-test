@@ -43,7 +43,6 @@
     height: 400px;
     float: left;
     margin-left: 8%;
-    background-color: #fff;
 
 }
 
@@ -97,5 +96,96 @@
 .total{
     
     font-size: 25px;  
+    
+}
+
+.table_element{
+    
+    height: 80px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    box-shadow: 0 3px 1px 0 rgba(66,66,66,.4);
+    background-color: #fff;
+    
+}
+
+.row{
+    
+    width: 98%;
+    @extend .table_element;
+    
+}
+
+.col{
+    
+    width: 49%;
+    display: inline-block;
+    @extend .table_element;
+    
+}
+
+.left label p{
+    
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: 800;
+    
+}
+
+.left input{
+    
+    width: 80%;
+    display: inline-block;
+    margin-left: 5px;
+    border: none;
+    
+}
+
+.left img{
+    
+    width: 5%;
+    margin-bottom: 3px;
+    display: inline-block;
+    
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#country_selection:hover{
+    
+    cursor: pointer;
+    
+}
+
+.purchase{
+    
+    display: table;
+    text-align: center;
+    background-color: #76FF03;
+    
+}
+
+.purchase div{
+    
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+.purchase div img{
+    
+    width: 3%;
+    display: inline-block;
+    
+}
+
+.purchase div p{
+    
+    display: inline-block;
+    margin-left: 2%;
+    color: #fff;
+    font-weight: 800;
     
 }

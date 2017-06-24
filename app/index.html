@@ -52,6 +52,7 @@
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/checkout.css">
+      
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -243,6 +244,56 @@
                     
                 </div>
                 <div class="left">
+                    <div class="col">
+                        <label>
+                            <p>
+                                First Name
+                            </p>
+                        </label>
+                        <input type="text" name="firstname" placeholder="Elon"> 
+                    </div>
+                    <div class="col">
+                        <label>
+                            <p>
+                                Last Name
+                            </p>
+                        </label>
+                        <input type="text" name="lastname" placeholder="Musk"> 
+                    </div>
+                    <div class="row">
+                        <label>
+                            <p>
+                                Email
+                            </p>
+                        </label>
+                        <input type="text" name="email" placeholder="elon@spacex.com"> 
+                    </div>
+                    <div class="col" id="country_selection">
+                        <label>
+                            <p>
+                                Country
+                            </p>
+                        </label>
+                        <input type="text" name="country" placeholder="United States" readonly="true">
+                        <img src="images/down.svg">
+                    </div>
+                    <div class="col">
+                        <label>
+                            <p>
+                                Postale Code
+                            </p>
+                        </label>
+                        <input type="text" name="postalcode" placeholder="10001"> 
+                    </div>
+                    <div class="row">
+                        <label>
+                            <p>
+                                Phone Number
+                            </p>
+                        </label>
+                        <input type="text" name="phone" placeholder="(212)692-93-92"> 
+                    </div>
+                    
                 </div>
                 <div class="right">
                     
@@ -309,6 +360,40 @@
                     
                 </div>
                 <div class="left">
+                    <div class="row">
+                        <label>
+                            <p>
+                                Credit Card Number
+                            </p>
+                        </label>
+                        <input type="text" name="phone" placeholder="0000-0000-0000-0000">
+                        <img src="images/visa.svg">
+                    </div>
+                    <div class="col">
+                        <label>
+                            <p>
+                                Security Code
+                            </p>
+                        </label>
+                        <input type="password" name="code" placeholder="***">
+                        <img src="images/question.svg">
+                    </div>
+                    <div class="col">
+                        <label>
+                            <p>
+                                Expiration Date
+                            </p>
+                        </label>
+                        <input type="text" name="date" placeholder="MM / YY">
+                    </div>
+                    <div class="row purchase">
+                        <div>
+                            <img src="images/cart.svg">
+                            <p>
+                                COMPLETE PURCHASE
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
             </div>

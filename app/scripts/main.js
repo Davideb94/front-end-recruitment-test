@@ -76,12 +76,19 @@
   var bacon_button = document.getElementsByTagName("button")[0],
       bacon_image = document.getElementsByTagName("img")[0],
       container = document.getElementById("overview").childNodes[3];
+  var country_selection = document.getElementById("country_selection");
 
   bacon_button.onclick = function(){
 
       var clone = bacon_image.cloneNode(true);
       container.appendChild(clone);
 
+  }
+  
+  country_selection.onclick = function(){
+      
+      alert("Dropdown menu was triggered");
+      
   }
 
 
