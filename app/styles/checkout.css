@@ -105,6 +105,15 @@ textarea:focus, input:focus {
   display: table-cell;
   vertical-align: middle; }
 
+.purchase button {
+  width: 100%;
+  height: inherit;
+  border: none;
+  background-color: transparent; }
+
+.purchase button:hover {
+  cursor: pointer; }
+
 .purchase div img {
   width: 3%;
   display: inline-block; }

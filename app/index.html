@@ -232,171 +232,175 @@
           </section>
         </div>
         <div class="mdl-layout__tab-panel" id="checkout">
+            
+            <form id="purchase_form" name="purchase_form">
+                <div class="block" id="personal">
 
-            <div class="block" id="personal">
+                    <div class="title">
 
-                <div class="title">
-                    
-                    <img src="images/one.svg">
-                    <p>
-                        PERSONAL INFORMATIONS
-                    </p>
-                    
+                        <img src="images/one.svg">
+                        <p>
+                            PERSONAL INFORMATIONS
+                        </p>
+
+                    </div>
+                    <div class="left">
+                        <div class="col" onclick="validateForm()">
+                            <label>
+                                <p>
+                                    First Name
+                                </p>
+                            </label>
+                            <input type="text" name="firstname" placeholder="Elon"> 
+                        </div>
+                        <div class="col">
+                            <label>
+                                <p>
+                                    Last Name
+                                </p>
+                            </label>
+                            <input type="text" name="lastname" placeholder="Musk"> 
+                        </div>
+                        <div class="row">
+                            <label>
+                                <p>
+                                    Email
+                                </p>
+                            </label>
+                            <input type="text" name="email" placeholder="elon@spacex.com"> 
+                        </div>
+                        <div class="col" id="country_selection">
+                            <label>
+                                <p>
+                                    Country
+                                </p>
+                            </label>
+                            <input type="text" name="country" placeholder="United States" readonly="true">
+                            <img src="images/down.svg">
+                        </div>
+                        <div class="col">
+                            <label>
+                                <p>
+                                    Postale Code
+                                </p>
+                            </label>
+                            <input type="text" name="postalcode" placeholder="10001"> 
+                        </div>
+                        <div class="row">
+                            <label>
+                                <p>
+                                    Phone Number
+                                </p>
+                            </label>
+                            <input type="text" name="phone" placeholder="(212)692-93-92"> 
+                        </div>
+
+                    </div>
+                    <div class="right">
+
+                        <div class="inner_container">
+                            <p class="inner_title">
+                                YOUR ORDER
+                            </p>
+
+                            <p class="details inner_left">
+                                Apple watch
+                            </p>
+                            <p class="details inner_right">
+                                $ 580
+                            </p>
+                            <div style="clear:both"></div>
+                            <p class="details inner_left">
+                                Modern Buckle
+                            </p>
+                            <p class="details inner_right">
+                                $ 380
+                            </p>
+                            <div style="clear:both"></div>
+
+                            <hr class="dashed_line" />
+
+                            <p class="details inner_left">
+                                Total purchases
+                            </p>
+                            <p class="details inner_right">
+                                $ 960.00
+                            </p>
+                            <div style="clear:both"></div>
+                            <p class="details inner_left">
+                                Estimated tax
+                            </p>
+                            <p class="details inner_right">
+                                $ 0
+                            </p>
+                            <div style="clear:both"></div>
+
+                            <hr class="dashed_line" />
+
+                            <p class="details inner_left inner_title">
+                                Total
+                            </p>
+                            <p class="details inner_right inner_title total">
+                                $ 960.00
+                            </p>
+                            <div style="clear:both"></div>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="left">
-                    <div class="col">
-                        <label>
-                            <p>
-                                First Name
-                            </p>
-                        </label>
-                        <input type="text" name="firstname" placeholder="Elon"> 
-                    </div>
-                    <div class="col">
-                        <label>
-                            <p>
-                                Last Name
-                            </p>
-                        </label>
-                        <input type="text" name="lastname" placeholder="Musk"> 
-                    </div>
-                    <div class="row">
-                        <label>
-                            <p>
-                                Email
-                            </p>
-                        </label>
-                        <input type="text" name="email" placeholder="elon@spacex.com"> 
-                    </div>
-                    <div class="col" id="country_selection">
-                        <label>
-                            <p>
-                                Country
-                            </p>
-                        </label>
-                        <input type="text" name="country" placeholder="United States" readonly="true">
-                        <img src="images/down.svg">
-                    </div>
-                    <div class="col">
-                        <label>
-                            <p>
-                                Postale Code
-                            </p>
-                        </label>
-                        <input type="text" name="postalcode" placeholder="10001"> 
-                    </div>
-                    <div class="row">
-                        <label>
-                            <p>
-                                Phone Number
-                            </p>
-                        </label>
-                        <input type="text" name="phone" placeholder="(212)692-93-92"> 
-                    </div>
-                    
-                </div>
-                <div class="right">
-                    
-                    <div class="inner_container">
-                        <p class="inner_title">
-                            YOUR ORDER
-                        </p>
-                        
-                        <p class="details inner_left">
-                            Apple watch
-                        </p>
-                        <p class="details inner_right">
-                            $ 580
-                        </p>
-                        <div style="clear:both"></div>
-                        <p class="details inner_left">
-                            Modern Buckle
-                        </p>
-                        <p class="details inner_right">
-                            $ 380
-                        </p>
-                        <div style="clear:both"></div>
-                        
-                        <hr class="dashed_line" />
-                        
-                        <p class="details inner_left">
-                            Total purchases
-                        </p>
-                        <p class="details inner_right">
-                            $ 960.00
-                        </p>
-                        <div style="clear:both"></div>
-                        <p class="details inner_left">
-                            Estimated tax
-                        </p>
-                        <p class="details inner_right">
-                            $ 0
-                        </p>
-                        <div style="clear:both"></div>
-                        
-                        <hr class="dashed_line" />
+                <div class="block" id="payment">
 
-                        <p class="details inner_left inner_title">
-                            Total
-                        </p>
-                        <p class="details inner_right inner_title total">
-                            $ 960.00
-                        </p>
-                        <div style="clear:both"></div>
-                        
-                    </div>
-                    
-                </div>
+                    <div class="title">
 
-            </div>
-            <div class="block" id="payment">
+                        <img src="images/two.svg">
+                        <p>
+                            PAYMENT DETAILS
+                        </p>
 
-                <div class="title">
-                    
-                    <img src="images/two.svg">
-                    <p>
-                        PAYMENT DETAILS
-                    </p>
-                    
-                </div>
-                <div class="left">
-                    <div class="row">
-                        <label>
-                            <p>
-                                Credit Card Number
-                            </p>
-                        </label>
-                        <input type="text" name="phone" placeholder="0000-0000-0000-0000">
-                        <img src="images/visa.svg">
                     </div>
-                    <div class="col">
-                        <label>
-                            <p>
-                                Security Code
-                            </p>
-                        </label>
-                        <input type="password" name="code" placeholder="***">
-                        <img src="images/question.svg">
-                    </div>
-                    <div class="col">
-                        <label>
-                            <p>
-                                Expiration Date
-                            </p>
-                        </label>
-                        <input type="text" name="date" placeholder="MM / YY">
-                    </div>
-                    <div class="row purchase">
-                        <div>
-                            <img src="images/cart.svg">
-                            <p>
-                                COMPLETE PURCHASE
-                            </p>
+                    <div class="left">
+                        <div class="row">
+                            <label>
+                                <p>
+                                    Credit Card Number
+                                </p>
+                            </label>
+                            <input type="text" name="credit" placeholder="0000-0000-0000-0000">
+                            <img src="images/visa.svg">
+                        </div>
+                        <div class="col">
+                            <label>
+                                <p>
+                                    Security Code
+                                </p>
+                            </label>
+                            <input type="password" name="code" placeholder="***">
+                            <img src="images/question.svg">
+                        </div>
+                        <div class="col">
+                            <label>
+                                <p>
+                                    Expiration Date
+                                </p>
+                            </label>
+                            <input type="text" name="date" placeholder="MM / YY">
+                        </div>
+                        <div class="row purchase">
+                            <button type="submit" form="purchase_form" value="Submit" id="submit_button">
+                                <div>
+                                    <img src="images/cart.svg">
+                                    <p>
+                                        COMPLETE PURCHASE
+                                    </p>
+                                </div>
+                            </button>
                         </div>
                     </div>
-                </div>
 
-            </div>
+                </div>
+            </form>
         </div>
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">

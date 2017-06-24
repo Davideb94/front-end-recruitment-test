@@ -174,6 +174,21 @@ textarea:focus, input:focus{
     
 }
 
+.purchase button{
+    
+    width: 100%;
+    height: inherit;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.purchase button:hover{
+    
+    cursor: pointer;
+    
+}
+
 .purchase div img{
     
     width: 3%;

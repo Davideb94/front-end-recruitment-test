@@ -73,21 +73,86 @@
   }
 
   // Your custom JavaScript goes here
-  var bacon_button = document.getElementsByTagName("button")[0],
-      bacon_image = document.getElementsByTagName("img")[0],
-      container = document.getElementById("overview").childNodes[3];
-  var country_selection = document.getElementById("country_selection");
+  var bacon_button = document.getElementsByTagName("button")[ 0 ],
+      bacon_image = document.getElementsByTagName( "img" )[ 0 ],
+      container = document.getElementById( "overview" ).childNodes[ 3 ];
+  var country_selection = document.getElementById( "country_selection" );
+  var form = document.getElementById( "purchase_form" );
 
   bacon_button.onclick = function(){
 
-      var clone = bacon_image.cloneNode(true);
+      var clone = bacon_image.cloneNode( true );
       container.appendChild(clone);
 
   }
   
   country_selection.onclick = function(){
       
-      alert("Dropdown menu was triggered");
+      alert( "Dropdown menu was triggered" );
+      
+  }
+  
+  form.onsubmit = function validateForm() {
+    
+      console.log( "running validation!" );
+      
+      var firstname = document.forms[ "purchase_form" ][ "firstname" ].value;
+      var lastname = document.forms[ "purchase_form" ][ "lastname" ].value;
+      var email = document.forms[ "purchase_form" ][ "email" ].value;
+      var country = document.forms[ "purchase_form" ][ "country" ].value;
+      var postal_code = document.forms[ "purchase_form" ][ "postalcode" ].value;
+      var phone = document.forms[ "purchase_form" ][ "phone" ].value;
+      var credit = document.forms[ "purchase_form" ][ "credit" ].value;
+      var code = document.forms[ "purchase_form" ][ "code" ].value;
+      var date = document.forms[ "purchase_form" ][ "date" ].value;
+      
+      if( firstname == "" ){
+          
+          alert("Please fill out First Name");
+          
+      }
+      else if( lastname == "" ){
+          
+          alert("Please fill out Last Name");
+          
+      }
+      else if( email == "" ){
+          
+          alert("Please fill out Email");
+          
+      }
+      /*else if( country == "" ){
+          
+          alert("Please select a Country");
+          
+      }*/
+      else if( postal_code == "" ){
+          
+          alert("Please fill out Postal Code");
+          
+      }
+      else if( phone == "" ){
+          
+          alert("Please fill out Phone");
+          
+      }
+      else if( credit == "" ){
+          
+          alert("Please fill our Credit Card Number");
+          
+      }
+      else if( code == "" ){
+          
+          alert("Please insert your Security Code --you can trus us;)");
+          
+      }
+      else if( date == "" ){
+          
+          alert("Please fill out Expiration Date");
+          
+      }
+      
+
       
   }
 
